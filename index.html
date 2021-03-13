@@ -9,10 +9,9 @@
     <title>Vitalii Tregubov</title>
 </head>
 <body>
-    <script src="main.js"></script>
     <header class="wrapper">
         <section class="top-bar">
-            <ul class="main-menu">
+            <!-- <ul class="main-menu">
                 <li>File</li>
                 <li>Edit</li>
                 <li>Selection</li>
@@ -21,15 +20,15 @@
                 <li>Run</li>
                 <li>Terminal</li>
                 <li>Help</li>
-            </ul>
+            </ul> -->
 
             <h1 class="main-header">Vitalii Tregubov's Website</h1>
-
+<!-- 
             <ul class="control-icons-menu">
                 <li><i class="fas fa-window-minimize"></i></li>
                 <li><i class="fas fa-window-restore"></i></li>
                 <li class="close-icon"><i class="fas fa-times"></i></li>
-            </ul>
+            </ul> -->
         </section>
     </header>
     <section class="side-bar">
@@ -42,12 +41,55 @@
         </ul>
 
         <ul class="side-bar_bottom-icons">
-            <li></li>
-            <li></li>
+            <li><i class="fal fa-user-circle"></i></li>
+            <li><i class="fal fa-cog"></i></li>
         </ul>
     </section>
+    <main class="page-main">
+        <section class="tabs-panel">
+            <ul class="tabs-list">
+                <li data-target="portfolio" class="tab-control portfolio active">
+                    <i class="fab fa-js"></i>
+                    Portfolio.js
+                </li>
+                <li data-target="skills" class="tab-control skills">
+                    <i class="fas fa-brackets-curly"></i>
+                    Skills.json</li>
+                <li data-target="contacts" class="tab-control contacts">
+                    <i class="fab fa-html5"></i>
+                    Contacts.html
+                </li>
+            </ul>
+        </section>
+        <section class="">
+            <ul data-target="portfolio" class="tab-content active portfolio">
+                <li>work1</li>
+                <li>work2</li>
+                <li>Works</li>
+            </ul>
+            <ul data-target="skills" class="tab-content skills">
+                <li>HTML/CSS/SASS</li>
+                <li>JS</li>
+                <li>Vue.js</li>
+                <li>Bash</li>
+                <li>Python</li>
+            </ul>
+            <ul data-target="contacts" class="tab-content contacts">
+                <li>one</li>
+                <li>two</li>
+                <li>three</li>
+                <li>five</li>
+                <li>six</li>
+                <li>three</li>
+                <li>five</li>
+                <li>six</li>
+            </ul>
+        </section>
+    </main>
     <footer class="footer">
         <span>footer</span>
     </footer>
+
+    <script src="main.js"></script>
 </body>
 </html>

@@ -39,7 +39,7 @@ body {
 .top-bar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   height: 30px;
   background-color: var(--secondary-bg);
   user-select: none;
@@ -62,7 +62,7 @@ body {
 
 .main-header {
   font-weight: 300;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .control-icons-menu {
@@ -88,6 +88,8 @@ body {
 /* SIDE BAR */
 .side-bar {
   position: fixed;
+  display: flex;
+  flex-direction: column;
   top: 30px;
   left: 0;
   bottom: 26px;
@@ -95,8 +97,12 @@ body {
   background-color: #343746;
 }
 
+.side-bar ul {
+  width: 100%;
+}
+
 .side-bar li {
-  padding: 10px 0;
+  padding: 12px 0;
   text-align: center;
 }
 
@@ -109,6 +115,65 @@ body {
 .side-bar li:hover i {
   color: #fff;
 }
+
+.side-bar_bottom-icons {
+  margin-top: auto;
+}
+
+/* MAIN */
+.page-main {
+  padding-left: 46px;
+}
+
+.tabs-panel {
+  background-color: #191A21;
+}
+
+
+.tabs-list {
+  display: flex;
+}
+
+.tab-control {
+  width: 160px;
+  height: 34px;
+  font-size: 16px;
+  line-height: 34px;
+  background-color: var(--secondary-bg);
+  cursor: pointer;
+}
+
+.tab-control i {
+  font-size: 16px;
+  padding: 0 5px 0 10px;
+}
+
+.tab-control i.fa-js {
+  color: yellow;
+}
+
+.tab-control i.fa-brackets-curly{
+  color: yellow;
+}
+
+.tab-control i.fa-html5{
+  color: #b73225;
+}
+
+.tab-control.active {
+  border-top: 1px solid purple;
+  background-color: var( --main-bg);
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.skills
 
 /* FOOTER */
 .footer {
