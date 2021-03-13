@@ -123,12 +123,12 @@ body {
 /* MAIN */
 .page-main {
   padding-left: 46px;
+  font-size: 18px;
 }
 
 .tabs-panel {
   background-color: #191A21;
 }
-
 
 .tabs-list {
   display: flex;
@@ -141,6 +141,7 @@ body {
   line-height: 34px;
   background-color: var(--secondary-bg);
   cursor: pointer;
+  user-select: none;
 }
 
 .tab-control i {
@@ -173,7 +174,9 @@ body {
   display: block;
 }
 
-.skills
+.tag {
+  color: #ce7e73
+}
 
 /* FOOTER */
 .footer {
