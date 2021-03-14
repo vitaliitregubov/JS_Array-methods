@@ -4,11 +4,11 @@ const tabControls = document.querySelectorAll(".tab-control");
 const tabContents = document.querySelectorAll(".tab-content");
 
 tabControls.forEach(tab => {
-  tab.addEventListener("click", ({ target }) => tabSwitch(target))
+  tab.addEventListener("click", e => tabSwitch(e))
 });
 
-function tabSwitch(el) {
-  const target = el.dataset.target;
+function tabSwitch(e) {
+  const target = e.target.dataset.target;
 
   tabControls.forEach(tab => {
     tab.dataset.target === target 

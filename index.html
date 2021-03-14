@@ -9,27 +9,8 @@
     <title>Vitalii Tregubov</title>
 </head>
 <body>
-    <header class="wrapper">
-        <section class="top-bar">
-            <!-- <ul class="main-menu">
-                <li>File</li>
-                <li>Edit</li>
-                <li>Selection</li>
-                <li>View</li>
-                <li>Go</li>
-                <li>Run</li>
-                <li>Terminal</li>
-                <li>Help</li>
-            </ul> -->
-
-            <h1 class="main-header">Vitalii Tregubov's Website</h1>
-<!-- 
-            <ul class="control-icons-menu">
-                <li><i class="fas fa-window-minimize"></i></li>
-                <li><i class="fas fa-window-restore"></i></li>
-                <li class="close-icon"><i class="fas fa-times"></i></li>
-            </ul> -->
-        </section>
+    <header class="page-header">
+        <h1 class="main-header">Vitalii Tregubov's Website</h1>
     </header>
     <section class="side-bar">
         <ul class="side-bar_top-icons">
@@ -49,23 +30,28 @@
         <section class="tabs-panel">
             <ul class="tabs-list">
                 <li data-target="portfolio" class="tab-control portfolio active">
-                    <i class="fab fa-js"></i>
-                    Portfolio.js
+                    <!-- <i class="fab fa-js"></i> -->
+                    portfolio.js
                 </li>
                 <li data-target="skills" class="tab-control skills">
-                    <i class="fas fa-brackets-curly"></i>
-                    Skills.json</li>
+                    <!-- <i class="fas fa-brackets-curly"></i> -->
+                    skills.json</li>
                 <li data-target="contacts" class="tab-control contacts">
-                    <i class="fab fa-html5"></i>
-                    Contacts.html
+                    <!-- <i class="fas fa-code"></i> -->
+                    contacts.html
                 </li>
             </ul>
         </section>
-        <section class="">
+        <section class="tabs-section">
             <ul data-target="portfolio" class="tab-content active portfolio">
-                <li>work1</li>
-                <li>work2</li>
-                <li>Works</li>
+                <li class="portfolio-item">Vue.js</li>
+                <li class="portfolio-item">Three.js</li>
+                <li class="portfolio-item">Python</li>
+                <li class="portfolio-item">Django</li>
+                <li class="portfolio-item">Flask</li>
+                <li class="portfolio-item">HTML/CSS</li>
+                <li class="portfolio-item">Typescript</li>
+                <li class="portfolio-item">PWA</li>
             </ul>
             <ul data-target="skills" class="tab-content skills">
                <pre>
@@ -113,10 +99,6 @@
             </ul>
         </section>
     </main>
-    <footer class="footer">
-        <span>footer</span>
-    </footer>
-
     <script src="main.js"></script>
 </body>
 </html>
