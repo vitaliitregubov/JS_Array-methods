@@ -3,6 +3,7 @@
 :root {
   --main-bg: #282A36;
   --secondary-bg: #262626;
+  --tag-color: #ce7e73;
 }
 
 * {
@@ -43,37 +44,9 @@ body {
   background-color: var(--secondary-bg);
 }
 
-.main-menu  {
-  display: flex;
-  height: 100%;
-  line-height: 30px;
-}
-
-.top-bar li:hover {
-  background-color: #363636;
-  cursor: default;
-}
-
-.main-menu li{
-  padding: 0 10px;
-}
-
 .main-header {
   font-weight: 300;
   font-size: 20px;
-}
-
-.tabs-section{
-  max-height: calc(100vh - 64px);
-  overflow-y: scroll;
-}
-
-.tabs-section::-webkit-scrollbar {
-  width: 16px;
-}
-
-.tabs-section::-webkit-scrollbar-thumb {
-  background-color: rgba(0,0,0, 0.4);
 }
 
 /* SIDE BAR */
@@ -154,11 +127,11 @@ body {
 
 .tab-control.contacts::before {
   content: "</>";
-  color: #ce7e73; 
+  color: var(--tag-color); 
 }
 
 .tab-control i.fa-code{
-  color: #ce7e73;
+  color: var(--tag-color);
 }
 
 .tab-control.active {
@@ -175,22 +148,16 @@ body {
 }
 
 .tag {
-  color: #ce7e73
+  color: var(--tag-color);
 }
 
 /* PORTFOLIO SECTION */
-.portfolio-section {
-  /* height: 100%; */
-  /* border: 2px solid red; */
-}
-
 .tab-content.portfolio.active {
-  /* border: 2px solid green; */
-  max-width: 1000px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 40px 20px;
 }
@@ -204,4 +171,17 @@ body {
   line-height: 200px;
   font-size: 22px;
   letter-spacing: 2px;
+}
+
+.tabs-section{
+  max-height: calc(100vh - 64px);
+  overflow-y: scroll;
+}
+
+.tabs-section::-webkit-scrollbar {
+  width: 16px;
+}
+
+.tabs-section::-webkit-scrollbar-thumb {
+  background-color: rgba(0,0,0, 0.4);
 }
